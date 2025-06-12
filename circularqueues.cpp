@@ -14,3 +14,17 @@ public:
         front = -1;
         rear = -1;
     }
+
+    void insert()
+    {
+        int num;
+        cout << "enter a number: ";
+        cin >> num;
+        cout << endl;
+
+        // 1. cek apakah ada antrian penuh
+        if ((front == 0 && rear == max - 1) || (front == rear + 1))
+        {
+            cout << "\nQueue overflow\n"; // 1.a
+            return;                       // 1.b
+        }
