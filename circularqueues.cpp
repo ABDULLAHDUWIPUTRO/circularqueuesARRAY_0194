@@ -1,9 +1,16 @@
 #include <iostream>
 using namespace std;
 
-class queues
+class Queues
 {
-    private:
+private:
     static const int max = 5;
-    int FRONT, REAR;
-    int queue_array[];
+    int front, rear;
+    int queue_array[5];
+
+public:
+    Queues()
+    {
+        front = -1;
+        rear = -1;
+    }
