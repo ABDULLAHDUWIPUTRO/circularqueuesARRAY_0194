@@ -87,4 +87,16 @@ public:
              return;
          }
  
-        
+         cout << "\nelements int the queue are... \n";
+ 
+         // jika front_position <= rear_position, literasi dari front hingga rear
+         if (front_position <= rear_position)
+         {
+             while (front_position <= rear_position)
+             {
+                 cout << queue_array[front_position] << "  ";
+                 front_position++;
+             }
+             cout << endl;
+         }
+         
