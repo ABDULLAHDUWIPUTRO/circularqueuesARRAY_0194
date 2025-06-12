@@ -75,3 +75,16 @@ public:
          }
      }
  
+     void display()
+     {
+         int front_position = front;
+         int rear_position = rear;
+ 
+         // cek apakah antrian kosong
+         if (front == -1)
+         {
+             cout << "queue is empty\n";
+             return;
+         }
+ 
+        
