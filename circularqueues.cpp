@@ -28,3 +28,12 @@ public:
             cout << "\nQueue overflow\n"; // 1.a
             return;                       // 1.b
         }
+
+
+         // 2. cek apakah antrian kosong
+         if (front == -1)
+         {
+             front = 0; // 2.a
+             rear = 0;  // 2.b
+         }
+        
