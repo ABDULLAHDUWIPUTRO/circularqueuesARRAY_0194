@@ -36,4 +36,14 @@ public:
              front = 0; // 2.a
              rear = 0;  // 2.b
          }
-        
+         else
+         {
+             // jika rear berada di posisi terakgir array, kembali ke awal array
+             if (rear == max - 1)
+                 rear = 0;
+             else
+                 rear = rear + 1;
+         }
+         queue_array[rear] = num;
+     }
+ 
