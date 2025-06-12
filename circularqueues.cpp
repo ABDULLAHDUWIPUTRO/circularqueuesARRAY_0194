@@ -99,4 +99,41 @@ public:
              }
              cout << endl;
          }
-         
+         else
+         {
+             // jika front_position > rear_positionn, literasi dari front hingga akhir array
+             while (front_position <= max - 1)
+             {
+                 cout << queue_array[front_position] << "  ";
+                 front_position++;
+             }
+ 
+             front_position = 0;
+ 
+             // literasi dari awal array hingga rear
+             while (front_position <= rear_position)
+             {
+                 cout << queue_array[front_position] << "  ";
+                 front_position++;
+             }
+             cout << endl;
+         }
+     }
+ };
+ 
+ int main()
+ {
+     Queues q;
+     char ch;
+ 
+     while (true)
+     {
+         try
+         {
+             cout << "menu" << endl;
+             cout << "1. implement insert operation" << endl;
+             cout << "2. implement delete operation" << endl;
+             cout << "3. display values" << endl;
+             cout << "4. exit" << endl;
+             cout << "enter your choice (1-4): ";
+             cin >> ch;
